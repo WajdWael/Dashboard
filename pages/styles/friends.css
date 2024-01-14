@@ -1,6 +1,7 @@
-@import url(css/framework.css);
-@import url(css/main.css);
-@import url(settings.css);
+@import url(../../css/framework.css);
+@import url(../../css/main.css);
+@import url(./settings.css);
+
 .friends-page{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }

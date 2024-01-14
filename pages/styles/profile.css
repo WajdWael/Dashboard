@@ -1,6 +1,6 @@
-@import url(css/framework.css);
-@import url(css/main.css);
-@import url(settings.css);
+@import url(../../css/framework.css);
+@import url(../../css/main.css);
+@import url(./settings.css);
 
 @media (max-width: 767px){
   .profile-page .overview {

@@ -1,6 +1,7 @@
-@import url(framework.css);
-@import url(main.css);
-@import url(settings.css);
+@import url(../../css/framework.css);
+@import url(../../css/main.css);
+@import url(./settings.css);
+
 .files-page {
     flex-direction: row-reverse;
     align-items: flex-start;

@@ -1,5 +1,5 @@
-@import url(css/framework.css);
-@import url(css/main.css);
+@import url(../../css/framework.css);
+@import url(../../css/main.css);
 
 .settings-page{
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
