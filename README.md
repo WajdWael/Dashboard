@@ -17,7 +17,7 @@ Our project is about creating a **dashboard with 8 sub-pages**, using advanced C
 Before we start, let's understand some core concepts that will make our lives easier while working on this project. 
 
 1. This project will teach how to separate your code into small pieces, which will be readable, and easier to catch errors. 
-2. advanced skills to structure your code and make it clean and readable.
+2. advanced skills to structure and make your code clean and readable.
 
 ---
 
@@ -27,15 +27,15 @@ We'll start with a simple **structuring** and **boilerplate** code!
 
 1. Download `images` folder out of this repo
 2. Create `CSS` folder with `framework.css` & `main.css` CSS files.
-3. Create `pages` folder, it'll hold website's pisces all the HTML files and their CSS styles.
-       - `Html` folder, with 7 sub pages:
+3. Create `pages` folder, it'll hold the website's pisces all the HTML files, and their CSS styles.
+       - `Html` folder, with 7 subpages:
       1. `courses.html`, 5. `files.html`
       2. `friends.html`, 6. `plans.html`
       3. `profile.html`, 7. `projects.html`
       4. `settings.html`
    
    - `CSS` folder, with the same names but REPLACE `.html` with `.css`
-4. [Jump to the code](https://github.com/wajdwael/dashborad/#Jump-to-the-code) 🦘
+4. [Jump to the code](https://github.com/WajdWael/Dashboard?tab=readme-ov-file#boilerplate) 🦘
 
 
 **NOTE: We will discuss the reason behind creating this huge number of pages rather than, pushing all the code in the `index.html` file, in more detail later on.**
@@ -44,7 +44,7 @@ We'll start with a simple **structuring** and **boilerplate** code!
 
 ## Jump to the code 🖥️
 
-Let's create the `Boilerplate` to ever single page, this `Bulareplatte` will containe all the common components between the pages:
+Let's create the `Boilerplate` for every single page, this `Bulareplatte` will contain all the common components between the pages:
 
 - Head `<Meta>` tag
 - Google fonts
@@ -57,7 +57,7 @@ Let's create the `Boilerplate` to ever single page, this `Bulareplatte` will con
 Before we start coding the `Boilerplate` we need to understand:
 
 # What is the `<Meta>` tag? 
-[Go to Boilerplate](https://github.com/wajdwael/dashboard/#Boilerplate)
+[Go to Boilerplate](https://github.com/WajdWael/Dashboard?tab=readme-ov-file#boilerplate)
 
 # Meta tag explanation:
 
@@ -70,9 +70,9 @@ Defines the character set that will be used in the site. UTF-8 or `8-bit Unicode
 ```HTML
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
-You use thia meta tag to define the version of Internet Explorer in which the web page will be renedered.
+You use this meta tag to define the version of Internet Explorer in which the web page will be rendered.
 
-> This tag will ensure that the website will not be rendered as an older version of Internet Explorer, which tend to be buggy.
+> This tag will ensure that the website will not be rendered as an older version of Internet Explorer, which tends to be buggy.
 
 --
 ```HTML
@@ -93,7 +93,7 @@ You use thia meta tag to define the version of Internet Explorer in which the we
 
 ![Famous CSS frameworks logos](repo-images/image-1.png)
 
-If you take a look on `framework.css` file you will find this type of class:
+If you take a look at `framework.css` file you will find this type of class:
 
 ```CSS
 /* ==========Widths========== */
@@ -242,20 +242,9 @@ More about frameworks advantages and disadvantages out of FreeCodeCamp... [Read 
 ---
 
 
-
-
-
-
-
-
-
-
-
-
-
 # Would it be better to include CSS styles in different files? & Why not have them all in index.css?
 
-We have 9 different files in this project, 7 files for every single page in this project, the `main.css` file includes all the common styles across the website.
+We have 9 different files in this project, 7 files for every single page in this project, `main.css` file includes all the common styles across the website.
 
 **Coding isn't only coding**, It's **a combination of** problem-solving and continuous learning, it also learns from other programmers' code, testing, and more.
 
@@ -270,7 +259,7 @@ When I provide you with 7 different pages with all CSS styles it will be more re
 
 1. **Use Semantic HTML**
 
-    Semantic HTML are elements that convey meaning and structure to the content they enclose. It involves choosing the most appropriate HTML element based on the purpose and meaning of the content. More on them later ... [▶️Jump](https://github.com/wajdwael/dashbaord/#Html5-tags).
+    Semantic HTML are elements that convey meaning and structure to the content they enclose. It involves choosing the most appropriate HTML element based on the purpose and meaning of the content. More on them later ... [▶️Jump](https://github.com/WajdWael/Dashboard?tab=readme-ov-file#html5-tags).
 
 2. **Alt text**
 
@@ -343,7 +332,7 @@ Represents **a standalone section of content** within a document, typically grou
 ## Some CSS Properties explanation:
 
 - `box-sizing: border-box;`
-    - When you apply box-sizing: border-box;, the width and height properties of the element include the padding and border, rather than being added to them. This ensures that the total width and height of the element remain as you specified.
+    - When you apply box-sizing: border-box; the width and height properties of the element include the padding and border, rather than being added to them. This ensures that the total width and height of the element remain as you specified.
 
 - `width: fit-content;` 
     - is used to set the width of an element based on its content.
