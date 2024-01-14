@@ -6,7 +6,7 @@ Hello and welcome to another project! Today, we will be focusing on **beginners 
 
 If you like the project, please give the project a GitHub ⭐
 
-[Preview Website "Demo"](https://wajdwael.github.io/Dashboard/)
+[Preview Website "Demo"](https://dashboard-beta-two-34.vercel.app/)
 
 ---
 
