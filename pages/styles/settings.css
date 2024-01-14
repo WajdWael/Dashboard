@@ -1,0 +1,253 @@
+@import url(css/framework.css);
+@import url(css/main.css);
+
+.settings-page{
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px){
+    .settings-page{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.settings-page .close-message{
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+}
+.toggle-checkbox{
+    appearance: none;
+}
+.toggle-switch{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggle-switch::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: .3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color: var(--blue);
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue);
+}
+.settings-page .email{
+    display: inline-block;
+    width: calc(100% - 80px);
+}
+.settings-page .sec-box{
+    padding-bottom: 15px;
+}
+.settings-page .sec-box:not(:last-of-type){
+    border-bottom: 1px solid #EEE;
+}
+.settings-page .sec-box .button{
+    transition: 0.3s;
+}
+.settings-page .sec-box .button:hover{
+    background-color: var(--blue-alt);
+}
+.settings-page .social-boxes i{
+    width: 40px;
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: .3s;
+}
+.settings-page .social-boxes input{
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #DDD;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i{
+    color: black;
+}
+.widgets-control .control input[type="checkbox"]{
+    appearance: none;
+}
+.widgets-control .control label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.widgets-control .control label::before,
+.widgets-control .control label::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+}
+.widgets-control .control label::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey);
+}
+.widgets-control .control label:hover::before{
+    border-color: var(--blue-alt);
+}
+.widgets-control .control label::after{
+    font-family: var(--fa-style-family-classic);
+    content: '\f00c';
+    font-weight: 900;
+    background-color: var(--blue);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: 0.3s;
+}
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+    transform: scale(1);
+}
+.backup-control input[type='radio']{
+    appearance: none;
+}
+.backup-control .date label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.backup-control .date label::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+}
+.backup-control .date label::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    transition: .3s;
+    transform: scale(0);
+}
+.backup-control .date input[type="radio"]:checked + label::before{
+    border-color: var(--blue);
+}
+.backup-control .date input[type="radio"]:checked + label::after{
+    transform: scale(1);
+}
+.backup-control .servers{
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+}
+@media (max-width: 767px) {
+    .backup-control .servers{
+        flex-wrap: wrap;
+    }
+}
+i.fa-brands{
+    display: flex;
+}
+.backup-control .servers .server {
+    border: 2px solid #EEE;
+    position: relative;
+}
+.backup-control .servers .server label{
+    cursor: pointer;
+}
+.backup-control .servers input[type='radio']:checked + .server{
+    border-color: var(--blue);
+    color: var(--blue);
+}
+.toggle-checkbox{
+    appearance: none;
+    display: none;
+}
+.toggle-switch{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch::before{
+    font-family: var(--fa-style-family-classic);
+    content: '\f00d';
+    font-weight: 900;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: .3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color: var(--blue);
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    content: '\f00c';
+    left: 50px;
+    color: var(--blue);
+}
+
+.settings-page :disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+
+@keyframes change-color{
+    from{
+        background-color: var(--blue);
+    }to{
+        background-color: white;
+    }
+}
+@keyframes go-up{
+    0%,
+    100%{
+        transform: translateY(0);
+    } 
+    50%{
+        transform: translateY(-5px);
+    }
+}
